@@ -1,68 +1,25 @@
 <!doctype html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TCMRadar — Food Industry Project Intelligence</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#17202a}
-header{background:#111827;color:#fff;padding:24px} .wrap{max-width:1250px;margin:auto;padding:20px}
-h1{margin:0 0 5px;font-size:28px} .sub{opacity:.75}
-.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.card,.panel{background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 8px #0001}
-.k{font-size:13px;color:#667085} .v{font-size:24px;font-weight:700;margin-top:6px}
-.controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
-.controls input,.controls select,.controls button{padding:11px;border:1px solid #d0d5dd;border-radius:8px;background:#fff}
-.controls button{background:#111827;color:#fff;cursor:pointer}
-.tablewrap{overflow:auto;border-radius:12px;box-shadow:0 2px 8px #0001}
-table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:12px;border-bottom:1px solid #eee;text-align:left;font-size:14px}
-tr:hover{background:#f8fafc;cursor:pointer} .badge{padding:5px 8px;border-radius:20px;font-weight:700;font-size:12px}
-.hot{background:#fee2e2;color:#991b1b} .watch{background:#ffedd5;color:#9a3412} .early{background:#fef3c7;color:#92400e}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:18px} .small{font-size:12px;color:#667085}
-.source{word-break:break-all} .score{font-weight:800}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.row{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<header><div class="wrap">
-<h1>THE COATING MASTER GROUP — TCMRadar</h1>
-<div class="sub">AI Food Industry Project Intelligence • Nederland & België • Free Starter</div>
-</div></header>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#17202a}header{background:#111827;color:#fff;padding:28px}
+.wrap{max-width:1250px;margin:auto;padding:20px}.sub{opacity:.75}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card,.panel{background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 8px #0001}.k{font-size:13px;color:#667085}.v{font-size:26px;font-weight:700;margin-top:6px}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.controls input,.controls select{padding:11px;border:1px solid #d0d5dd;border-radius:8px}.tablewrap{overflow:auto;border-radius:12px;box-shadow:0 2px 8px #0001}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:12px;border-bottom:1px solid #eee;text-align:left;font-size:14px}tr:hover{background:#f8fafc}.badge{padding:5px 8px;border-radius:20px;font-weight:700;font-size:12px}.hot{background:#fee2e2;color:#991b1b}.watch{background:#ffedd5;color:#9a3412}.early{background:#ecfdf3;color:#166534}.detail{margin-top:18px}.muted{color:#667085}@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body>
+<header><div class="wrap"><h1>THE COATING MASTER GROUP — TCMRadar</h1><div class="sub">AI Food Industry Project Intelligence • Nederland & België • Free Starter</div></div></header>
 <div class="wrap">
-<div class="grid">
-<div class="card"><div class="k">Projecten</div><div class="v" id="count">0</div></div>
-<div class="card"><div class="k">🔥 HOT</div><div class="v" id="hot">0</div></div>
-<div class="card"><div class="k">🟠 WATCH</div><div class="v" id="watch">0</div></div>
-<div class="card"><div class="k">Gemarkeerde kansen</div><div class="v" id="high">0</div></div>
-<div class="card"><div class="k">Laatste update</div><div class="v" style="font-size:15px" id="updated">—</div></div>
-</div>
-<div class="controls">
-<input id="q" placeholder="Zoek project, bedrijf, plaats...">
-<select id="country"><option value="">NL + BE</option><option>Nederland</option><option>België</option></select>
-<select id="status"><option value="">Alle statussen</option><option>HOT</option><option>WATCH</option><option>EARLY SIGNAL</option></select>
-</div>
-<div class="tablewrap"><table><thead><tr><th>Score</th><th>Project</th><th>Bedrijf</th><th>Locatie</th><th>Sector</th><th>Fase</th><th>Investering</th><th>Coating potential</th></tr></thead>
-<tbody id="rows"></tbody></table></div>
-<div id="detail" class="panel" style="display:none;margin-top:18px"></div>
-<div class="panel" style="margin-top:18px">
-<b>TCMRadar 1.2</b>
-<p class="small">Deze versie gebruikt bewust geen externe API. De projectdataset is in deze pagina ingebouwd, zodat GitHub Pages hem direct kan tonen. De automatische update-laag kan later via GitHub Actions worden aangesloten.</p>
-</div>
+<div class="grid"><div class="card"><div class="k">Projecten</div><div class="v" id="count">0</div></div><div class="card"><div class="k">🔥 HOT</div><div class="v" id="hot">0</div></div><div class="card"><div class="k">🟠 WATCH</div><div class="v" id="watch">0</div></div><div class="card"><div class="k">Gemarkeerde kansen</div><div class="v" id="high">0</div></div><div class="card"><div class="k">Laatste update</div><div class="v" style="font-size:15px" id="updated">—</div></div></div>
+<div class="controls"><input id="q" placeholder="Zoek project, bedrijf, plaats..." oninput="render()"><select id="status" onchange="render()"><option>Alle statussen</option><option>HOT</option><option>WATCH</option><option>EARLY SIGNAL</option></select></div>
+<div class="tablewrap"><table><thead><tr><th>Score</th><th>Project</th><th>Bedrijf</th><th>Locatie</th><th>Sector</th><th>Fase</th><th>Investering</th><th>Coating potential</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="panel detail" id="detail">Klik op een project voor details.</div>
+<div class="panel" style="margin-top:18px"><b>TCMRadar 1.3</b><div class="muted">Dagelijkse gratis scan via GitHub Actions. Automatisch gevonden signalen worden als "te verifiëren" gemarkeerd; bestaande projecten blijven behouden.</div></div>
 </div>
 <script>
-const DATA={"radar_version": "1.2 FREE AUTO-READY", "updated_utc": "2026-09-14T14:05:31.000219+00:00", "learning": {"positive_signals": ["food", "voedingsmiddelen", "zuivel", "productielijn", "fabriek", "uitbreiding", "modernisering", "warehouse", "foodgrade", "vloer", "coating", "beton", "renovatie"], "negative_signals": ["kantoor", "woning", "retail", "school", "woningbouw"], "rule": "Score is a transparent heuristic; AI validation can be added later. User feedback should adjust weights, not silently rewrite historical records."}, "projects": [{"id": "NL-FC-2026", "score": 94, "status": "HOT", "name": "Investeringsprogramma wei-eiwitten", "company": "FrieslandCampina Ingredients", "location": "Bedum / Veghel / Workum", "country": "Nederland", "sector": "Zuivel", "phase": "Modernisering / uitbreiding", "investment_eur": 90000000, "potential": "€250k–€500k", "work": "Industriële vloeren, foodgrade zones, wandcoating, renovatie en betonbescherming", "source": "https://www.frieslandcampina.com/nl/nieuws/frieslandcampina-kondigt-groot-investeringsprogramma-aan-om-groei-in-hoogwaardige-wei-eiwitten-te-versnellen/", "source_date": "2026-05-05"}, {"id": "BE-CARGILL-2026", "score": 92, "status": "HOT", "name": "Uitbreiding eetbare oliën / chocolade", "company": "Cargill", "location": "Izegem / Mouscron / Vilvoorde", "country": "België", "sector": "Food manufacturing", "phase": "Uitbreiding / upgrading", "investment_eur": 56000000, "potential": "€150k–€350k", "work": "Foodgrade vloeren, productiezones, wandcoating, betonbescherming, hygiënische afwerking", "source": "https://www.cargill.com/2026/cargill-strengthens-belgium-as-strategic-european-food-nl", "source_date": "2026-06-03"}, {"id": "NL-NUNHEMS-2026", "score": 86, "status": "WATCH", "name": "State-of-the-art zaadverwerkingsfaciliteiten", "company": "BASF | Nunhems", "location": "Nunhem", "country": "Nederland", "sector": "Agrofood", "phase": "Bouw gestart Q2 2026", "investment_eur": 40000000, "potential": "€75k–€175k", "work": "Slijtvaste vloeren, wanden, proceszones en betonbescherming", "source": "https://www.nunhems.com/nl/nl/news_events/News/2026/BASF---Nunhems-investeert--40-miljoen-in-state-of-the-art-zaadverwerkingsfaciliteiten-in-Nederland", "source_date": "2026-04-16"}, {"id": "NL-FOODHUB-2026", "score": 84, "status": "WATCH", "name": "Rotterdam Food Hub", "company": "Port of Rotterdam / Necron / PTP", "location": "Europoort Rotterdam", "country": "Nederland", "sector": "Food logistics", "phase": "Ontwikkeling", "investment_eur": null, "potential": "€100k–€300k", "work": "Warehousevloeren, laad-/loszones, gekoelde opslag, betonbescherming en food-logistics afwerking", "source": "https://www.portofrotterdam.com/nl/nieuws-en-persberichten/overeenkomst-voor-ontwikkeling-38-hectare-rotterdam-food-hub", "source_date": "2026-06-12"}, {"id": "BE-PEPSICO-2026", "score": 81, "status": "WATCH", "name": "Veurne Snack Foods masterplan / logistiek complex", "company": "PepsiCo / Veurne Snack Foods", "location": "Veurne", "country": "België", "sector": "Food manufacturing", "phase": "Bouw / uitbreiding", "investment_eur": 200000000, "potential": "€100k–€300k", "work": "Magazijnvloeren, logistieke zones, productie-/inpakzones, betonreparatie en coating", "source": "https://www.voka.be/west-vlaanderen/nieuws/ondernemers-2026-7/veurne-snack-foods-pepsico-bouwt-voor-verdubbeling-productie", "source_date": "2026-04-03"}, {"id": "NL-PROTEINBREWERY-2026", "score": 78, "status": "WATCH", "name": "Opschaling commerciële productie mycoproteïne", "company": "The Protein Brewery", "location": "Breda", "country": "Nederland", "sector": "Food / ingredients", "phase": "Opschaling", "investment_eur": 18000000, "potential": "€40k–€120k", "work": "Fermentatie-/productiezones, foodgrade vloeren, wanden en betonbescherming", "source": "https://www.theproteinbrewery.com/18m-series-b-extension", "source_date": "2026-06-29"}, {"id": "NL-COSUN-2026", "score": 76, "status": "EARLY SIGNAL", "name": "Verduurzaming productielocaties", "company": "Royal Cosun", "location": "Vierverlaten / Steenderen / Venray", "country": "Nederland", "sector": "Agrofood", "phase": "Investering / verduurzaming", "investment_eur": 73000000, "potential": "€75k–€200k", "work": "Procesvloeren, technische ruimtes, betonbescherming, chemisch/mechanisch belaste zones", "source": "https://www.rijksoverheid.nl/actueel/nieuws/2025/12/18/maatwerkafspraak-met-royal-cosun-over-verduurzaming", "source_date": "2025-12-18"}]};
-function money(n){return n==null?'—':new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n)}
-function render(){
-let q=document.getElementById('q').value.toLowerCase(),c=document.getElementById('country').value,s=document.getElementById('status').value;
-let a=DATA.projects.filter(p=>(!q||JSON.stringify(p).toLowerCase().includes(q))&&(!c||p.country===c)&&(!s||p.status===s)).sort((a,b)=>b.score-a.score);
-document.getElementById('count').textContent=a.length;
-document.getElementById('hot').textContent=DATA.projects.filter(p=>p.status==='HOT').length;
-document.getElementById('watch').textContent=DATA.projects.filter(p=>p.status==='WATCH').length;
-document.getElementById('high').textContent=DATA.projects.filter(p=>p.score>=85).length;
-document.getElementById('updated').textContent=new Date(DATA.updated_utc).toLocaleString('nl-NL');
-document.getElementById('rows').innerHTML=a.map(p=>`<tr onclick="detail('${p.id}')"><td class="score">${p.score}/100</td><td><span class="badge ${p.status==='HOT'?'hot':p.status==='WATCH'?'watch':'early'}">${p.status}</span><br><b>${p.name}</b></td><td>${p.company}</td><td>${p.location}</td><td>${p.sector}</td><td>${p.phase}</td><td>${money(p.investment_eur)}</td><td>${p.potential}</td></tr>`).join('');
-}
-function detail(id){let p=DATA.projects.find(x=>x.id===id),d=document.getElementById('detail');d.style.display='block';d.innerHTML=`<h2>${p.name}</h2><div class="row"><div><b>Bedrijf:</b> ${p.company}<br><b>Locatie:</b> ${p.location}<br><b>Sector:</b> ${p.sector}<br><b>Fase:</b> ${p.phase}<br><b>AI-score:</b> ${p.score}/100</div><div><b>Geschatte coatingpotentie:</b> ${p.potential}<br><b>Relevante werkzaamheden:</b><br>${p.work}<br><br><b>Bron:</b><br><a href="${p.source}" target="_blank">${p.source}</a></div></div>`}
-document.getElementById('q').oninput=render;document.getElementById('country').onchange=render;document.getElementById('status').onchange=render;render();
-</script>
-</body></html>
+let db={projects:[],updated:null}, items=[];
+async function init(){try{let r=await fetch('data/radar.json?'+Date.now());db=await r.json();items=db.projects||[]}catch(e){document.getElementById('detail').innerHTML='Radar-data kon niet worden geladen.'}render()}
+function render(){let q=(document.getElementById('q').value||'').toLowerCase(), st=document.getElementById('status').value;
+let a=items.filter(p=>(st==='Alle statussen'||p.status===st)&&JSON.stringify(p).toLowerCase().includes(q));
+document.getElementById('count').textContent=items.length;document.getElementById('hot').textContent=items.filter(p=>p.status==='HOT').length;document.getElementById('watch').textContent=items.filter(p=>p.status==='WATCH').length;document.getElementById('high').textContent=items.filter(p=>p.score>=85).length;document.getElementById('updated').textContent=db.updated?new Date(db.updated).toLocaleString('nl-NL'):'—';
+document.getElementById('rows').innerHTML=a.map((p,i)=>`<tr onclick="show(${items.indexOf(p)})"><td><b>${p.score}/100</b></td><td><span class="badge ${p.status==='HOT'?'hot':p.status==='WATCH'?'watch':'early'}">${p.status}</span><br><b>${esc(p.title)}</b></td><td>${esc(p.company)}</td><td>${esc(p.location)}</td><td>${esc(p.sector)}</td><td>${esc(p.phase)}</td><td>${p.investment_eur?('€'+Number(p.investment_eur).toLocaleString('nl-NL')):'—'}</td><td>${esc(p.coating_potential||'—')}</td></tr>`).join('')}
+function show(i){let p=items[i];document.getElementById('detail').innerHTML=`<h3>${esc(p.title)}</h3><b>${esc(p.company)}</b> • ${esc(p.location)} • ${esc(p.sector)}<p><b>Score:</b> ${p.score}/100 &nbsp; <b>Status:</b> ${esc(p.status)} &nbsp; <b>Coating potential:</b> ${esc(p.coating_potential||'—')}</p><p>${esc(p.notes||'')}</p><p><b>Bron:</b> <a href="${p.url}" target="_blank" rel="noopener">${esc(p.source||p.url)}</a></p>`}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}init();
+</script></body></html>
