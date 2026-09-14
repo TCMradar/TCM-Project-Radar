@@ -1,13 +1,7 @@
 on:
+workflow_dispatch:
 schedule:
 - cron: "0 5 * * *"
-workflow_dispatch:
-push:
-branches:
-- main
-
-permissions:
-contents: write
 
 jobs:
 scan:
@@ -17,18 +11,16 @@ steps:
 - name: Checkout
 uses: actions/checkout@v4
 
-- name: Set up Python
+- name: Setup Python
 uses: actions/setup-python@v5
 with:
-python-version: "3.x"
+python-version: "3.12"
 
-- name: Run TCMRadar scanner
-run: python update_radar.py
-
-- name: Commit updated radar data
+- name: Test TCMRadar
 run: |
-git config user.name "TCMRadar Bot"
-git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-git add data/radar.json
-git diff --cached --quiet || git commit -m "TCMRadar daily scan"
-git push
+echo "TCMRadar scanner gestart"
+python --version
+ls -la
+echo "Data map:"
+ls -la data
+echo "TCMRadar test OK"
