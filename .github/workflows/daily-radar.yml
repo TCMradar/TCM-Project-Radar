@@ -1,1 +1,26 @@
+"on":
+schedule:
+- cron: "0 5 * * *"
+workflow_dispatch:
 
+permissions:
+contents: write
+
+jobs:
+scan:
+runs-on: ubuntu-latest
+
+steps:
+- name: Checkout
+uses: actions/checkout@v4
+
+- name: Run TCMRadar scanner
+run: python scripts/update_radar.py
+
+- name: Commit new radar data
+run: |
+git config user.name "TCMRadar Bot"
+git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+git add data/radar.json
+git diff --cached --quiet || git commit -m "TCMRadar daily scan"
+git push
