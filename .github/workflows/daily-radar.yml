@@ -1,3 +1,5 @@
+name: TCMRadar Daily
+
 on:
 workflow_dispatch:
 schedule:
