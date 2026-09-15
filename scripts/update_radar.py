@@ -4,7 +4,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import quote
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "radar.json"
