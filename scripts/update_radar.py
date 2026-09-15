@@ -151,7 +151,7 @@ def main():
                 pub = (item.findtext("pubDate") or "").strip()
                 try:
                     pub_dt = parsedate_to_datetime(pub)
-                    if datetime.now(timezone.utc - pub_dt.astimezone(timezone.utc) > timedelta(days=180):
+                    if datetime.now(timezone.utc) - pub_dt.astimezone(timezone.utc) > timedelta(days=180):
                         continue
                 except Exception:
                     continue
