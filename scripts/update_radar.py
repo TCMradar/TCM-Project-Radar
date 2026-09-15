@@ -157,7 +157,7 @@ def main():
                     continue
     
                 sc = text_score(title, desc)
-                if sc < 65 or not link: continue
+                if sc < 55 or not link: continue
                 uid = hashlib.sha1(link.encode()).hexdigest()[:12]
                 if uid in found: continue
                 inv = investment(title + " " + desc)
