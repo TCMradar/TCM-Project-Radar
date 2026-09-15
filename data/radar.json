@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T09:46:27.615820+00:00",
+  "updated": "2026-09-15T10:58:19.353233+00:00",
   "projects": [
     {
       "id": "frieslandcampina-whey",
@@ -288,6 +288,57 @@
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTmh6VjdTUlRKOGU4NFpSSEotVTBwOWlYSGM4SE5EMjZyanJ2RXNNMmhMUG1HX0tnNVE2eWp0RFlKanBpaE41RlpzQUcyUHVZcUFMTUk5M3lpRG9YSjdGT2FXeUFIN1JFcEFBMnRzUGpfZ0ZNWEJZZHRhcl9MSmVtUVRiaDF0TlZYVTI4Tk1rZ25jcjNlUEdaS3JzMEtIdWFSYXVESGRHUWtiTEJ3bFBsdVZ1bzlWUXBSS1RNZTlRTm1KS0VVejFQcw?oc=5",
       "published": "Fri, 23 Jan 2026 08:00:00 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
+      "id": "afc7122faaa9",
+      "title": "Molkereibranche: Ehrmann investiert massiv in die Expansion - Lebensmittel Zeitung",
+      "company": "Nog te bepalen",
+      "location": "Germany / verify",
+      "country": "DE",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": null,
+      "score": 63,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "Te bepalen",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOT2ZvSnA0MTBDbldWSl9tVHRlVjJkTEJKUDduOEstRE5uR0VMQ1FiT05TVkJxMEpHX2xySUZITkV4UXkwWWl0X1plRUViR0ZWYjlXaWozbFVqejIzTDd3bUZqQllTaWcyREFnSVdmTVIzS29GM3VFMjZVQ2ZEM3BqaUpIby1rT1JSRnZLdXlNNlBOazl1QmJ0NmJoNktjdXVFRFB1Z2Voc1RkdHpIS1I2UndkZ0JCOFJfRXZ1ZjVuaDI?oc=5",
+      "published": "Fri, 17 Apr 2026 07:00:00 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
+      "id": "43a0bf4b9105",
+      "title": "Nestlé deed te snel aanname in babyvoedingrecall: 'We dachten dat het aan de nieuwe productielijn lag' - vmt.nl",
+      "company": "Nog te bepalen",
+      "location": "Netherlands / verify",
+      "country": "NL",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": null,
+      "score": 59,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "Te bepalen",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOTFvbDJzZ0NoUVFmVi0tTTJ0T0tyblpNNU5vMVNWU3JWNF9SMlZNYkFtVU1jTGJsQ2tEc2NqRGVYcTJuTWlzY0RtWjBFbVk1Nzl4al9kS0w0MTlzWlhoTU9nenNyZW5uR1F1X1VUX2NXYnl0aUI1ZXJpUFhVN2RsTzNUNFdSeW5EVWplMGhwaHVES1gxS2NZTHQ0ZUdEU21VSGNxWFR2Qkt1UHhXbkpqV3pIR2wtQlNwcmExVWVhTWRzUHcz?oc=5",
+      "published": "Tue, 07 Apr 2026 07:00:00 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
+      "id": "0b360dc2895e",
+      "title": "Speiseeisproduzent - Froneri investiert 30 Millionen Euro in Osnabrücker Werk - Lebensmittelpraxis.de",
+      "company": "Nog te bepalen",
+      "location": "Germany / verify",
+      "country": "DE",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": null,
+      "score": 58,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "Te bepalen",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQLWlHTVpaTHFFZTg1Y3NmZEYyUWJweTY0VVZzWjl2Qy1jbTU3ZjJDVVVKWVd6Rl8zVFZIMWdtMC0zbXlNOVRBTXdaMUt3N1Y4TzlDb1dmT0xlSkNyU2RXNzRLWDlBamJRSHBSc0k4d2o5VktVelQ5dUtLR0J5eUpmdDNoRGlNTnh5VWpINTVadldMZ2tpcEd2T2I1WTNTVkJrVnBaeGlFeE1jMFRjVm5vdDRES3E5b0J0dmFQaVJnZUJRMkEtLTg5VEFrWjE5UHZq?oc=5",
+      "published": "Wed, 22 Jul 2026 07:00:00 GMT",
       "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
     }
   ]
