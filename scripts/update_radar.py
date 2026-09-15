@@ -97,7 +97,7 @@ def load():
         return json.loads(DATA.read_text(encoding="utf-8"))
     return {"updated": None, "projects": []}
 
-ef rss(q):
+def rss(q):
     if "Deutschland" in q or "Deutsch" in q:
         locale = "&hl=de&gl=DE&ceid=DE:de"
     elif "Polska" in q or "Poland" in q:
