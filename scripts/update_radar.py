@@ -5,7 +5,7 @@ from urllib.request import Request, urlopen
 from urllib.parse import quote
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
-
+from email.utils import parsedate_to_datetime
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "radar.json"
 
@@ -149,6 +149,13 @@ def main():
                 link = (item.findtext("link") or "").strip()
                 desc = (item.findtext("description") or "").strip()
                 pub = (item.findtext("pubDate") or "").strip()
+                try:
+                    pub_dt = parsedate_to_datetime(pub)
+                    if datetime.now(timezone.utc - pub_dt.astimezone(timezone.utc) > timedelta(days=180):
+                        continue
+                except Exception:
+                    continue
+    
                 sc = text_score(title, desc)
                 if sc < 65 or not link: continue
                 uid = hashlib.sha1(link.encode()).hexdigest()[:12]
