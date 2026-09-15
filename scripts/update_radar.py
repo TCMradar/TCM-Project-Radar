@@ -97,9 +97,19 @@ def load():
         return json.loads(DATA.read_text(encoding="utf-8"))
     return {"updated": None, "projects": []}
 
-def rss(q):
-    url = "https://news.google.com/rss/search?q=" + quote(q) + "&hl=nl&gl=NL&ceid=NL:nl"
-    req = Request(url, headers={"User-Agent":"TCMRadar/1.3"})
+ef rss(q):
+    if "Deutschland" in q or "Deutsch" in q:
+        locale = "&hl=de&gl=DE&ceid=DE:de"
+    elif "Polska" in q or "Poland" in q:
+        locale = "&hl=pl&gl=PL&ceid=PL:pl"
+    elif "België" in q or "Belgium" in q:
+        locale = "&hl=nl&gl=BE&ceid=BE:nl"
+    else:
+        locale = "&hl=nl&gl=NL&ceid=NL:nl"
+
+    url = "https://news.google.com/rss/search?q=" + quote(q) + locale
+    req = Request(url, headers={"User-Agent": "TCMRadar/1.3"})
+
     with urlopen(req, timeout=20) as r:
         return ET.fromstring(r.read())
 
