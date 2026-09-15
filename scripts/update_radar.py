@@ -103,7 +103,7 @@ def load():
 def rss(q):
     if "Deutschland" in q or "Deutsch" in q:
         locale = "&hl=de&gl=DE&ceid=DE:de"
-    elif "Polska" in q or "Poland" in q:
+    elif "Poland" in q or "Polska" in q:
         locale = "&hl=pl&gl=PL&ceid=PL:pl"
     elif "België" in q or "Belgium" in q:
         locale = "&hl=nl&gl=BE&ceid=BE:nl"
@@ -170,7 +170,7 @@ def main():
                 if "Deutschland" in check_text or "Deutsch" in check_text or "Germany" in check_text:
                     country = "DE"
                     location = "Germany / verify"
-                elif "Polska" in check_text or "Poland" in check_text or "Polisch" in check_text:
+                elif "Poland" in check_text or "Polska" in check_text or "Polisch" in check_text:
                     country = "PL"
                     location = "Poland / verify"
                 elif "Belgie" in check_text or "Belgium" in check_text:
