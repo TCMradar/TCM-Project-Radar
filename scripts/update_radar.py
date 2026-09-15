@@ -165,7 +165,7 @@ def main():
                 if uid in found: continue
                 inv = investment(title + " " + desc)
                 status = "HOT" if sc >= 90 else ("WATCH" if sc >= 75 else "EARLY SIGNAL")
-                check_text = q + "" + tittle + "" + desc
+                check_text = q + "" + title + "" + desc
 
                 if "Deutschland" in check_text or "Deutsch" in check_text or "Germany" in check_text:
                     country = "DE"
