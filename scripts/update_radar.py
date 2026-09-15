@@ -41,6 +41,7 @@ QUERIES = [
     "budowa fabryki spożywczej Polska",
     "remont zakładu spożywczego Polska",
     "posadzka przemysłowa żywność Polska",
+    "food factory investment Poland",
 ]
 
 FOOD_WORDS = [
