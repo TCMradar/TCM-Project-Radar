@@ -58,10 +58,12 @@ FOOD_WORDS = [
     "schokolade", "kartoffel", "snack", "lebensmittelproduktion",
 
     # Pools
-    "przemysł spożywczy", "spożywczy", "żywność",
-    "fabryka żywności", "zakład produkcyjny", "mleczarnia",
-    "mięso", "piekarnia", "napoje", "czekolada",
-    "ziemniak", "przetwórstwo spożywcze",
+    "żywność", "przemysł spożywczy", "zakład spożywczy",
+    "mleczarnia", "nabiał", "mięso", "piekarnia",
+    "napoje", "browar", "czekolada", "ziemniaki",
+    "przekąski", "składniki", "chłodnia",
+    "linia produkcyjna", "zakład produkcyjny",
+    "przetwórstwo żywności",
 ]
 
 PROJECT_WORDS = [
@@ -170,7 +172,7 @@ def main():
                 elif "Polska" in cehck_text or "Poland" in check_text or "Polisch" in check_text:
                     country = "PL"
                     location = "Poland / verify"
-                elif "Belgie" in check_text or "Belgium" in check_text in check_text:
+                elif "Belgie" in check_text or "Belgium" in check_text:
                     country = "BE"
                     location = "Belgium / verify"
                 else:
