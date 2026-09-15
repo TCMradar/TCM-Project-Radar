@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T12:28:26.840367+00:00",
+  "updated": "2026-09-15T16:11:01.253026+00:00",
   "projects": [
     {
       "id": "frieslandcampina-whey",
@@ -339,6 +339,23 @@
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQLWlHTVpaTHFFZTg1Y3NmZEYyUWJweTY0VVZzWjl2Qy1jbTU3ZjJDVVVKWVd6Rl8zVFZIMWdtMC0zbXlNOVRBTXdaMUt3N1Y4TzlDb1dmT0xlSkNyU2RXNzRLWDlBamJRSHBSc0k4d2o5VktVelQ5dUtLR0J5eUpmdDNoRGlNTnh5VWpINTVadldMZ2tpcEd2T2I1WTNTVkJrVnBaeGlFeE1jMFRjVm5vdDRES3E5b0J0dmFQaVJnZUJRMkEtLTg5VEFrWjE5UHZq?oc=5",
       "published": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
+      "id": "3aeabf9df149",
+      "title": "Polska firma INVEST EM wybuduje nowy zakład produkcyjny na Dolnym Śląsku - Investmap",
+      "company": "Nog te bepalen",
+      "location": "Poland / verify",
+      "country": "PL",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": null,
+      "score": 58,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "Te bepalen",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQXVhcnotUUwwUWcxa1BFTWg0NjFBWFBYbFdFbVpnMGVjeDd0SkI3V3I2NWJsbElKV1ZCaWYwa2xqNjlHcTN1bHBzMjJ3bnEzZER0NFpXTWhrd0Q3NjdEZFpWR1VDQnJKYUt5cEtuUjhzM1UxUHpqc1VuNmJNc2ZDWDliallXWFRrYTE1Z1RXLVl3YTB6SHkzV3FOX19NOXNCekhj0gGmAUFVX3lxTE5MbERobDhyZGNRaUMybmUycHVxckZueWZNR2RlTUh6eExYMkxMTFBJZjZBQWVITDFORnViaWxyaWJIb05TZFZ6ZU9EdzREWV9qVW93RmF5SkVJQzA2c09uN2VfcElRZUlMTTdCejhrSTNleV9hTFozWUtPNklXWXJaUHczU3l2WUJnbVNrRXQ0d2s0ZnJQczZscDZscVVsako1cDlodUE?oc=5",
+      "published": "Mon, 31 Aug 2026 06:50:24 GMT",
       "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
     }
   ]
