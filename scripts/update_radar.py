@@ -155,14 +155,27 @@ def main():
                 if uid in found: continue
                 inv = investment(title + " " + desc)
                 status = "HOT" if sc >= 90 else ("WATCH" if sc >= 75 else "EARLY SIGNAL")
+                if "Deutschland" in q or "Deutsch" in q:
+                    country = "DE"
+                    location = "Germany / verify"
+                elif "Polska" in q or "Poland" in q:
+                    country = "PL"
+                    location = "Poland / verify"
+                elif "België" in q or "Belgium" in q:
+                    country = "BE"
+                    location = "Belgium / verify"
+                else:
+                    country = "NL"
+                    location = "Netherlands / verify"
+
                 found[uid] = {
-                    "id": uid, "title": title, "company": "Nog te bepalen",
-                    "location": "NL / BE", "country": "NL/BE", "sector": "Food industry",
-                    "phase": "Signaal / te verifiëren", "investment_eur": inv,
-                    "score": sc, "status": status, "coating_potential": potential(inv, sc),
-                    "source": "Google News", "url": link, "published": pub,
-                    "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
-                }
+    "id": uid, "title": title, "company": "Nog te bepalen",
+    "location": location, "country": country, "sector": "Food industry",
+    "phase": "Signaal / te verifiëren", "investment_eur": inv,
+    "score": sc, "status": status, "coating_potential": potential(inv, sc),
+    "source": "Google News", "url": link, "published": pub,
+    "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+}
         except Exception as e:
             print("Feed error:", q, e)
 
