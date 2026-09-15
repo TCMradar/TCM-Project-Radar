@@ -10,31 +10,87 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "radar.json"
 
 QUERIES = [
-    'voedingsmiddelen fabriek uitbreiding Nederland',
-    'food factory expansion Netherlands',
-    'zuivelfabriek investering Nederland',
-    'food processing plant investment Netherlands',
-    'voedingsmiddelen fabriek uitbreiding België',
-    'food factory expansion Belgium',
-    'agrofood productie uitbreiding Nederland België',
-    'nieuwe productielijn voedingsmiddelen Nederland België',
-    'food grade vloer fabriek uitbreiding Nederland België',
+    # Nederland
+    "voedingsmiddelen fabriek uitbreiding Nederland",
+    "food factory expansion Netherlands",
+    "zuivelfabriek investering Nederland",
+    "food processing plant investment Netherlands",
+    "nieuwe productielijn voedingsmiddelen Nederland",
+    "food grade vloer fabriek uitbreiding Nederland",
+
+    # België
+    "voedingsmiddelen fabriek uitbreiding België",
+    "food factory expansion Belgium",
+    "agrofood productie uitbreiding België",
+    "nieuwe productielijn voedingsmiddelen België",
+
+    # Duitsland
+    "Lebensmittelindustrie Fabrikerweiterung Deutschland",
+    "Lebensmittelwerk Neubau Deutschland",
+    "Molkerei Investition Deutschland",
+    "Lebensmittel Produktionserweiterung Deutschland",
+    "neue Produktionslinie Lebensmittel Deutschland",
+    "Lebensmittelfabrik Sanierung Deutschland",
+    "Industrieboden Beschichtung Lebensmittel Deutschland",
+
+    # Polen
+    "przemysł spożywczy rozbudowa Polska",
+    "fabryka żywności inwestycja Polska",
+    "zakład produkcyjny rozbudowa Polska",
+    "nowa linia produkcyjna żywność Polska",
+    "budowa fabryki spożywczej Polska",
+    "remont zakładu spożywczego Polska",
+    "posadzka przemysłowa żywność Polska",
 ]
 
 FOOD_WORDS = [
-    "food","food industry","food processing","food factory","voeding","voedingsmiddelen",
-    "zuivel","dairy","meat","vlees","bakker","bakery","brewery","drank","beverage",
-    "chocolate","chocolade","potato","aardappel","snack","ingredients","ingrediënten",
-    "agrofood","cold store","cold storage","koel","productielijn","productielocatie",
+    "food", "food industry", "food processing", "food factory",
+    "voeding", "voedingsmiddelen", "zuivel", "dairy",
+    "meat", "vlees", "bakker", "bakery", "brewery",
+    "drank", "beverage", "chocolate", "potato", "aardappel",
+    "snack", "ingredients", "ingrediënten", "agrofood",
+    "cold store", "cold storage", "koel", "productielijn",
+    "productielocatie",
+
+    # Duits
+    "lebensmittel", "lebensmittelindustrie", "lebensmittelwerk",
+    "molkerei", "milch", "fleisch", "bäckerei", "getränke",
+    "schokolade", "kartoffel", "snack", "lebensmittelproduktion",
+
+    # Pools
+    "przemysł spożywczy", "spożywczy", "żywność",
+    "fabryka żywności", "zakład produkcyjny", "mleczarnia",
+    "mięso", "piekarnia", "napoje", "czekolada",
+    "ziemniak", "przetwórstwo spożywcze",
 ]
+
 PROJECT_WORDS = [
-    "investment","investering","invest","expansion","uitbreiding","bouw","new build",
-    "nieuwbouw","factory","fabriek","plant","facility","faciliteit","modernisation",
-    "modernisering","renovation","renovatie","production line","productielijn",
-    "warehouse","magazijn","logistics","logistiek","upgrade","upgrading","capacity",
-    "capaciteit","masterplan","construction","construction started","bouw gestart",
+    "investment", "investering", "invest", "expansion",
+    "uitbreiding", "bouw", "new build", "nieuwbouw",
+    "factory", "fabriek", "plant", "facility", "faciliteit",
+    "modernisation", "modernisering", "renovation", "renovatie",
+    "production line", "productielijn", "warehouse", "magazijn",
+    "logistics", "logistiek", "upgrade", "upgrading",
+    "capacity", "masterplan", "construction", "construction started",
+    "bouw gestart",
+
+    # Duits
+    "investition", "investitionen", "erweiterung", "ausbau",
+    "neubau", "fabrik", "werk", "anlage", "produktionsanlage",
+    "modernisierung", "sanierung", "produktionslinie",
+    "lager", "logistik", "kapazität", "bau gestartet",
+
+    # Pools
+    "inwestycja", "inwestycje", "rozbudowa", "budowa",
+    "nowa fabryka", "fabryka", "zakład", "modernizacja",
+    "remont", "linia produkcyjna", "magazyn", "logistyka",
+    "wydajność", "budowa rozpoczęta",
 ]
-NEGATIVE_WORDS = ["woning","woningbouw","residential","office","kantoor","school","hotel","retail"]
+
+NEGATIVE_WORDS = [
+    "woning", "woningbouw", "residential",
+    "office", "kantoor", "school", "hotel", "retail"
+]
 
 def load():
     if DATA.exists():
