@@ -166,7 +166,7 @@ def main():
 
                 if "Deutschland" in check_text or "Deutsch" in check_text or "Germany" in check_text:
                     country = "DE"
-                    location = "Germany" / verify"
+                    location = "Germany / verify"
                 elif "Polska" in cehck_text or "Poland" in check_text or "Polisch" in check_text:
                     country = "PL"
                     location = "Poland / verify"
