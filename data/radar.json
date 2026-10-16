@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T05:18:35.416219+00:00",
+  "updated": "2026-10-16T09:25:42.467945+00:00",
   "projects": [
     {
       "id": "frieslandcampina-whey",
@@ -308,6 +308,23 @@
       "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
     },
     {
+      "id": "cee2485e77a6",
+      "title": "Nach 60-Millionen-Euro-Investition: Gmundner Molkerei will 400 Millionen Kilo Milch verarbeiten - Salzburger Nachrichten",
+      "company": "Nog te bepalen",
+      "location": "Germany / verify",
+      "country": "DE",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": null,
+      "score": 63,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "Te bepalen",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZFFmZWZnbEE3LTZIMUg4TmliTG5GeU9oRlYyenFhb1Q4TVcxdnZ4cENfbGpnWW5nN09lVWZuajdOZjljcmcyVWtlYUttVl96ZDcwLVowOUNpMDI4SU5WU28tcGtraklCcGM4Z2NfQktQcHZ5RG5jdDJQVDhQUWp2SzNocGZrZmZNS2NVUmE0VHRWZUpLektmV1RqOVhyS0wyYzF0eTlkemhfYjVPTmhvR0tVbXR4Y3ZmVDVpamhmbEJ1anEydVZVT3FDX0F2bng0Tld5R0hLdjN5dk05RlhJ?oc=5",
+      "published": "Thu, 15 Oct 2026 13:30:00 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
       "id": "a569a165aff5",
       "title": "Lebensmittellogistik: Sunday Natural Logistics realisiert Distributionslager in Viersen-Mackenstein - Logistik Heute",
       "company": "Nog te bepalen",
@@ -407,6 +424,23 @@
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQXVhcnotUUwwUWcxa1BFTWg0NjFBWFBYbFdFbVpnMGVjeDd0SkI3V3I2NWJsbElKV1ZCaWYwa2xqNjlHcTN1bHBzMjJ3bnEzZER0NFpXTWhrd0Q3NjdEZFpWR1VDQnJKYUt5cEtuUjhzM1UxUHpqc1VuNmJNc2ZDWDliallXWFRrYTE1Z1RXLVl3YTB6SHkzV3FOX19NOXNCekhj0gGmAUFVX3lxTE5MbERobDhyZGNRaUMybmUycHVxckZueWZNR2RlTUh6eExYMkxMTFBJZjZBQWVITDFORnViaWxyaWJIb05TZFZ6ZU9EdzREWV9qVW93RmF5SkVJQzA2c09uN2VfcElRZUlMTTdCejhrSTNleV9hTFozWUtPNklXWXJaUHczU3l2WUJnbVNrRXQ0d2s0ZnJQczZscDZscVVsako1cDlodUE?oc=5",
       "published": "Mon, 31 Aug 2026 06:50:24 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
+      "id": "21d481977503",
+      "title": "60 Millionen Euro Investment: Gmundner Molkerei baut die Käseproduktion in Gmunden aus - MeinBezirk.at",
+      "company": "Nog te bepalen",
+      "location": "Germany / verify",
+      "country": "DE",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": null,
+      "score": 58,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "Te bepalen",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWFFTSVNrbHo5QnRzN2NPNkN0QS1TMEpnV25qMmhTZHVUWmVRMjZfQzJhN0dTTXZBOF9qOUxXNVg1OXN5ZGlmNUVIZDdEUjRONFFoeU9Od2Q5U3YyUE5Wci1kT0RHbERVUmRIUUt2YlVoQTIyM29tRHRfdHo0TW1nR3VtOTRRQkpXMzRsTHNFdzVhREp5dGZidV83VjNveFduTDNYVzZ5cWd1eURCRVJQLW5KLVBXSGlwNTcw?oc=5",
+      "published": "Fri, 16 Oct 2026 06:43:18 GMT",
       "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
     }
   ]
