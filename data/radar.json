@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T10:41:06.027998+00:00",
+  "updated": "2026-10-27T10:09:01.071942+00:00",
   "projects": [
     {
       "id": "frieslandcampina-whey",
@@ -441,6 +441,23 @@
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWFFTSVNrbHo5QnRzN2NPNkN0QS1TMEpnV25qMmhTZHVUWmVRMjZfQzJhN0dTTXZBOF9qOUxXNVg1OXN5ZGlmNUVIZDdEUjRONFFoeU9Od2Q5U3YyUE5Wci1kT0RHbERVUmRIUUt2YlVoQTIyM29tRHRfdHo0TW1nR3VtOTRRQkpXMzRsTHNFdzVhREp5dGZidV83VjNveFduTDNYVzZ5cWd1eURCRVJQLW5KLVBXSGlwNTcw?oc=5",
       "published": "Fri, 16 Oct 2026 06:43:18 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
+      "id": "d0bfbd0c2629",
+      "title": "Lebensmittellogistik: Nagel-Group lanciert neue Logistikanlage bei Hannover - Logistik Heute",
+      "company": "Nog te bepalen",
+      "location": "Germany / verify",
+      "country": "DE",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": null,
+      "score": 58,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "Te bepalen",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbXplcUFNTzNPZ3RsV3NPV1Zhd2syNWhlY1cxUkozaUVFN0lUTTZmb3ptNTVIZjF3UnpoU0dqZ3Zqb3lZSjlIVmE2dklqSnNGUmFxYWZ6SnhTa2F2NHhYRGEzOEVLZmY4dHpVMFd6dzU0S2FiazhHR1lVeTNKNFhmLUswUWJUU3BfdnZlVjR0RE9HTF9POExmbUZZejBTSktmNGhwVnBOaThPdUpvUlNFdkRFSWlnNHlN?oc=5",
+      "published": "Thu, 20 Aug 2026 07:00:00 GMT",
       "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
     }
   ]
