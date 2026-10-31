@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T11:07:45.180827+00:00",
+  "updated": "2026-10-31T10:41:34.237682+00:00",
   "projects": [
     {
       "id": "frieslandcampina-whey",
@@ -475,6 +475,23 @@
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbXplcUFNTzNPZ3RsV3NPV1Zhd2syNWhlY1cxUkozaUVFN0lUTTZmb3ptNTVIZjF3UnpoU0dqZ3Zqb3lZSjlIVmE2dklqSnNGUmFxYWZ6SnhTa2F2NHhYRGEzOEVLZmY4dHpVMFd6dzU0S2FiazhHR1lVeTNKNFhmLUswUWJUU3BfdnZlVjR0RE9HTF9POExmbUZZejBTSktmNGhwVnBOaThPdUpvUlNFdkRFSWlnNHlN?oc=5",
       "published": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
+      "id": "ce784d8f8817",
+      "title": "Lebensmittellogistik: ID Logistics und Lactalis nehmen Kühllogistikzentrum in Hessen in Betrieb - Logistik Heute",
+      "company": "Nog te bepalen",
+      "location": "Germany / verify",
+      "country": "DE",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": null,
+      "score": 58,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "Te bepalen",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSzE3R0ZMREoyWklTby01djAwdWJHVGpVTzNqeDJJbGhKYWdUNEF5RjhGc2trZnNKU1Y1ZWc4LXJSaWVCbENtY2JNMEdrUGtreHlzX09PV3JIRElTdnV2WlQzMGdOeFBhLW5VOXdWaHNqMGpxbTFOX0hTNk16NmZmSXdzNVBJbzBQYlVHSkRhZDBsOTJRX3RVUUY0R3RHMTdtNzcxUXRyYVpmNDAzUXA5MmJsd2c3VTFyN1dmdDEyTEpaYjFhakZrN2lMd1o?oc=5",
+      "published": "Wed, 14 Oct 2026 07:00:00 GMT",
       "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
     }
   ]
