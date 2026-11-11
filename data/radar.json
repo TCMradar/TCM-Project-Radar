@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T13:10:05.791838+00:00",
+  "updated": "2026-11-11T12:19:31.707805+00:00",
   "projects": [
     {
       "id": "frieslandcampina-whey",
@@ -492,6 +492,23 @@
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSzE3R0ZMREoyWklTby01djAwdWJHVGpVTzNqeDJJbGhKYWdUNEF5RjhGc2trZnNKU1Y1ZWc4LXJSaWVCbENtY2JNMEdrUGtreHlzX09PV3JIRElTdnV2WlQzMGdOeFBhLW5VOXdWaHNqMGpxbTFOX0hTNk16NmZmSXdzNVBJbzBQYlVHSkRhZDBsOTJRX3RVUUY0R3RHMTdtNzcxUXRyYVpmNDAzUXA5MmJsd2c3VTFyN1dmdDEyTEpaYjFhakZrN2lMd1o?oc=5",
       "published": "Wed, 14 Oct 2026 07:00:00 GMT",
+      "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
+    },
+    {
+      "id": "01dfcb599f3b",
+      "title": "Agristo Invests €350 Million in Hauts-de-France to Expand European Potato Processing Capacity - PotatoPro",
+      "company": "Nog te bepalen",
+      "location": "Belgium / verify",
+      "country": "BE",
+      "sector": "Food industry",
+      "phase": "Signaal / te verifiëren",
+      "investment_eur": 350000000,
+      "score": 58,
+      "status": "EARLY SIGNAL",
+      "coating_potential": "€525k–€1750k",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZzFWODVDeEU0b1JyMHRxMnNuWnhBNjNCMFhnUXZIMFYyaHFKdExjYldoYXN3eGIwblR4NWdDT2dnREczOHVGSWZUdVFVRjBlNi1meU0wY0RhRTdkSVhfQnp5a3duWmEzbi1EdFVCT19STktwYjdBMkxLaUo0Vm1QYWpZMFE1T01kWnhkMVJXcHlFeDZ5LUVMOHRGdnUwd1pVVXBiRlNnUjI5Nmx4Z20wbmo5T3Q0Tk1oVng2bE9aTXFHdw?oc=5",
+      "published": "Fri, 14 Aug 2026 03:40:10 GMT",
       "notes": "Automatisch gevonden signaal. Bedrijf, locatie en projectfase moeten nog worden gevalideerd."
     }
   ]
